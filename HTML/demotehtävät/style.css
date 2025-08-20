@@ -11,6 +11,7 @@ p {
 
 p {
     font: italic bold 35px "wide latin", Times, serif;
+    text-align: center
 }
 
 body {margin: 0;
@@ -25,4 +26,4 @@ h2 {
 
 li {
     list-style-type: circle;
-  }
+p
