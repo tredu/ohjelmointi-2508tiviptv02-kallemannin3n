@@ -1,0 +1,13 @@
+.box1 {
+    padding: 8px 15px;
+    border: 2px solid black;
+    margin: 30px;
+}
+.box2 {
+    padding: 8px 15px;
+    border: 2px solid black;
+    margin: 30px;
+    height: 400px;
+    width: 1200px;
+    max-width: 90%;
+}
