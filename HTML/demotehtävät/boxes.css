@@ -7,6 +7,7 @@ box-sizing: border-box;
     margin: 100px;
     height: 200px;
     width: 800px;
+    display: none; visibility: hidden;
 }
 .box2 {
     padding: 10px 15px;
@@ -15,13 +16,10 @@ box-sizing: border-box;
     height: 300px;
     width: 800px;
     max-width: 80%;
+    display: inline;.
 }
 
-.mydiv {
-    padding: 6px 15px;
-    border: 2px solid rgb(0, 51, 255);
-    border-radius: 15px;
-}
+
 
 h1 {
     text-shadow: 2px 2px;
