@@ -1,5 +1,6 @@
+
 p {
-    color: rgb(86, 86, 98);
+    color: rgb(0, 0, 255);
     text-align: center;
     text-align: justify;
     text-decoration: underline;
@@ -26,11 +27,17 @@ h2 {
 
 li {
     list-style-type: circle;
-p
-.mydiv {
+}
+.box1 {
     padding: 8px 15px;
 }
-.mydiv {
+.box2 {
+    padding: 8px 15px;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.box1 {
     padding: 8px 15px;
     border: 2px solid black;
+    border-radius: 15px;
 }
