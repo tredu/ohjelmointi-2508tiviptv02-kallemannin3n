@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    background: #004d99;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0; padding: 0;
+  }
+  
+  nav li {
+    margin-left: 15px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffcc00;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  .intro {
+    margin-bottom: 30px;
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+  }
+  
+  .products article {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px #ccc;
+  }
+  
+  .products img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #004d99;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: #003366;
+  }
+  
+  footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 40px;
+  }
+  
+  footer nav ul {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  footer nav li {
+    margin: 0 10px;
+  }
+  
+  footer nav a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  footer nav a:hover {
+    color: white;
+  }
+  .icons a img {
+    width: 25px; 
+    height: 25px;  
+    filter: brightness(100%);
+    transition: filter 0.3s;
+    cursor: pointer;
+  }
+  
+  
