@@ -1,0 +1,98 @@
+
+body {
+    display: flex;
+    font-family: wide latin;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ff0000;
+}
+
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: #0033ff; 
+    color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+
+.div1 {
+    background-color: #3c00ff; 
+}
+
+.div1:hover {
+    border: 5px solid #ff0095; 
+    transform: skew(15deg);
+    transition: transform 0.5s ease-out, border 0.3s ease-out;
+}
+
+
+.div2 {
+    background-color: #00d0ff; 
+    animation: moveAndColor 3s ease-in-out infinite; 
+}
+
+
+@keyframes moveAndColor {
+    0% {
+        background-color: #ff3c00; 
+        transform: translateX(0); 
+    }
+    50% {
+        background-color: #000000; 
+        transform: translateX(1000px); 
+    }
+    100% {
+        background-color: #2bff00; 
+        transform: translateX(0); 
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+
+.typewriter {
+    font-size: 30px;
+    font-family: wide latin;
+    white-space: nowrap; 
+    overflow: hidden; 
+    border-right: 4px solid black; 
+    width: 0; 
+    animation: typing 3s steps(30) 1s forwards, blink 0.75s step-end infinite;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+@keyframes blink {
+    50% {
+        border-color: transparent; 
+    }
+}
+

@@ -1,0 +1,29 @@
+.navbar-vertical {
+    background-color: #990000	;
+    padding: 75px;
+    width: 200px;
+}
+
+.navbar-vertical ul {
+    list-style: none;
+    margin: 25;
+    padding: 10;
+    display: flex;
+    flex-direction: column; 
+    align-items: start; 
+}
+
+.navbar-vertical li {
+    margin: 10px ;
+}
+
+.navbar-vertical a {
+    text-decoration: none;
+    color: rgb(77, 255, 0);
+    padding: 10px 5px;
+}
+
+.navbar-vertical a:hover {
+    background-color: #0022ff;
+    border-radius: 5px;
+}
