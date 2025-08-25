@@ -1,0 +1,61 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Tyylitellään navigointipalkki */
+nav {
+    display: flex;
+    flex-direction: column;  /* Pystysuuntainen navigointi */
+    width: 200px;
+    background-color: #f4f4f4; /* Vaalean harmaa taustaväri */
+    padding: 20px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+nav li:hover {
+    color: blue;
+}
+
+/* Flexbox-asettelu main-kohdassa (tuotteet) */
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.tuotteet {
+    display: flex;
+    flex-wrap: wrap;  /* Riviin, mutta rikkoo rivin tarvittaessa */
+    justify-content: space-between; /* Tyhjä tila tuotteiden välissä */
+    gap: 20px; /* Väli tuotteiden välillä */
+    flex-grow: 1;  /* Tuotteet vievät kaiken jäljellä olevan tilan */
+    margin-left: 220px;  /* Puskee tuotteet oikealle, jotta ne eivät mene navigoinnin päälle */
+}
+
+.subdiv {
+    background-color: #e3e3e3; 
+    padding: 20px;
+    border: 2px solid #ccc; 
+    border-radius: 8px; 
+    width: 220px;
+    text-align: center;
+}
+
+.subdiv h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.subdiv p {
+    font-size: 14px;
+    color: #555;  
+}
