@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tuotteen nimi - Xkauppa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <style>
+        .logo img {
+          height: 40px; /* Esimerkki: pienempi korkeus */
+          width: auto;
+        }
+      </style>
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/34/34568.png" alt="Logo" />
+      <h1>Xkauppa</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Koti</a></li>
+        <li><a href="products.html">Tuotteet</a></li>
+        <li><a href="#" class="cart-button">Ostoskori (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="product-detail">
+      <h2>Älypuhelin X</h2>
+
+      <div class="product-images">
+        <img src="https://cdn.pixabay.com/photo/2019/11/23/11/33/mobile-phone-4646854_1280.jpg" alt="Tuote kuva 1" />
+      </div>
+
+      <section class="product-info">
+        <h3>Lisätiedot</h3>
+        <ul>
+          <li>Väri: musta</li>
+          <li>Valmistusmaa: Suomi</li>
+          <li>Tallennustila: 64Gt 128Gt 256Gt 1T</li>
+        </ul>
+      </section>
+
+      <section class="purchase-form">
+        <form action="#" method="post">
+          <label for="quantity">Määrä:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+          <button type="submit">Lisää ostoskoriin</button>
+        </form>
+      </section>
+
+      <section class="reviews">
+        <h3>Asiakasarvostelut</h3>
+        <article class="review">
+          <p><strong>Anna:</strong> Loistava laatu ja nopea toimitus!</p>
+        </article>
+        <article class="review">
+          <p><strong>Mikko:</strong> Hyvä hinta-laatusuhde, suosittelen.</p>
+        </article>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Koti</a></li>
+        <li><a href="products.html">Tuotteet</a></li>
+        <li><a href="contact.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+    <p>© 2025 Xkauppa</p>
+  </footer>
+</body>
+</html>

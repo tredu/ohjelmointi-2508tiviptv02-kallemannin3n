@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tuotteen nimi - Xkauppa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <style>
+        .logo img {
+          height: 40px;
+          width: auto;
+        }
+      </style>
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/34/34568.png" alt="Logo" />
+      <h1>Xkauppa</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Koti</a></li>
+        <li><a href="products.html">Tuotteet</a></li>
+        <li><a href="#" class="cart-button">Ostoskori (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="product-detail">
+      <h2>Mikroaaltouuni</h2>
+
+      <div class="product-images">
+        <img src="https://next-media.elkjop.com/image/dv_web_D180001002858864/289385/kenwood-mikroaaltouuni-k20mb21e-musta.jpg?w=640&q=75" alt="Tuote kuva 1" />
+      </div>
+
+      <section class="product-info">
+        <h3>Lisätiedot</h3>
+        <ul>
+          <li>Väri: Musta</li>
+          <li>Valmistusmaa: Ruotsi</li>
+          <li>Säädettävä teho</li>
+       
+          </li>
+        </ul>
+      </section>
+
+      <section class="purchase-form">
+        <form action="#" method="post">
+          <label for="quantity">Määrä:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+          <button type="submit">Lisää ostoskoriin</button>
+        </form>
+      </section>
+
+      <section class="reviews">
+        <h3>Asiakasarvostelut</h3>
+        <article class="review">
+          <p><strong>jani:</strong> En suosittele! Toimituksessa kesti 2 viikkoa ja mikron etulasi oli rikki.</p>
+        </article>
+        <article class="review">
+          <p><strong>Jouni:</strong> Mikron lautanen oli rikki.</p>
+        </article>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html">Koti</a></li>
+        <li><a href="products.html">Tuotteet</a></li>
+        <li><a href="contact.html">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+    <p>© 2025 Xkauppa</p>
+  </footer>
+</body>
+</html>

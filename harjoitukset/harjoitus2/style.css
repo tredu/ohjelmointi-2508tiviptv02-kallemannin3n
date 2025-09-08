@@ -22,7 +22,7 @@ body {
   .logo img {
     height: 40px;
     margin-right: 10px;
-    width: 100%;
+    width: auto;
   }
   
   nav ul {
@@ -113,7 +113,10 @@ body {
   footer nav a {
     color: #aaa;
     text-decoration: none;
-    font-size: 0.9em;
+    transition: color 0.3s;
+    font-style: wide latin;
+    padding: 10px 15px;
+    font-size: 1.1em;
   }
   
   footer nav a:hover {
