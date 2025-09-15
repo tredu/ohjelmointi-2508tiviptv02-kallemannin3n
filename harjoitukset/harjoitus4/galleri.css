@@ -1,0 +1,19 @@
+.more-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #004d99;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, width 0.3s ease;
+    animation: buttonPulse 1.5s infinite; /* Nappi kasvaa ja pienenee */
+    width: 150px; /* kiinteä leveys */
+  }
+  
+  .more-button:hover {
+    background-color: #003366;
+    transform: scale(1.1); /* Nappi kasvaa */
+    width: 180px; /* Pitenee */
+  }
+  

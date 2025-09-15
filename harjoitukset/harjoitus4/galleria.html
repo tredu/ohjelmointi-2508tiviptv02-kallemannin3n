@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuvagalleria Animaatioilla</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #333;
+      margin-bottom: 50px;
+      animation: colorChange 3s infinite; 
+    }
+
+   
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 50px;
+    }
+
+    .gallery-item {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    
+    .gallery-item:hover img {
+      transform: scale(1.1); 
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-10px); 
+    }
+
+    .caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      font-size: 1em;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item:hover .caption {
+      opacity: 1; 
+    }
+
+
+    .more-button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #004d99;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      animation: buttonPulse 1.5s infinite; 
+    }
+
+    .more-button:hover {
+      background-color: #003366;
+      transform: scale(1.1); 
+    }
+
+    @keyframes buttonPulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+   
+    @keyframes colorChange {
+      0% {
+        color: #333;
+      }
+      50% {
+        color: #ff5733;
+      }
+      100% {
+        color: #333;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>kuvia kissoista</h1> 
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://abys.fi/wp-content/uploads/2023/03/musa_esittely-1024x819.jpg" alt="ruskea kissa">
+      <div class="caption">ruskea kissa</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgVfHORQFLyUf_rNove-xUmxIskDeMJ63REz_YIMQ6S0vCyQdkBvJos4igKspvCgpqnpy8h0xM--1uckzZIxDgyoHy37-MowkF-YzvVx8" alt="oranssi kissa">
+      <div class="caption">oranssi kissa</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://www.helsinki.fi/assets/drupal/styles/16_10_fallback/s3/media-image/salmiakkikissa_D9.jpg.jpeg?itok=Ok3kGGu8" alt="musta valko kissa">
+      <div class="caption">musta valko kissa</div>
+    </div>
+  </div>
+
+  <button class="more-button">Enemmän kuvia</button> 
+</body>
+</html>
