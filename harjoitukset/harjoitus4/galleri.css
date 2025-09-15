@@ -7,13 +7,13 @@
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease, width 0.3s ease;
-    animation: buttonPulse 1.5s infinite; /* Nappi kasvaa ja pienenee */
-    width: 150px; /* kiinteä leveys */
+    animation: buttonPulse 1.5s infinite; 
+    width: 150px; 
   }
   
   .more-button:hover {
     background-color: #003366;
-    transform: scale(1.1); /* Nappi kasvaa */
-    width: 180px; /* Pitenee */
+    transform: scale(1.1); 
+    width: 180px;
   }
   
