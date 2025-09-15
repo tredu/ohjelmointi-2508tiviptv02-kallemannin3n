@@ -142,21 +142,20 @@
       <div class="row">
         <div class="col-md-7">
           <p>Voit ottaa yhteyttä sähköpostilla. Alla oleva lomake lähettää viestin suoraan sähköpostiini.</p>
-          <form
-        action="https://formspree.io/f/xblaegnq"
-        method="POST"
-        >
-        <label>
-            sähöpostiosoite:
-            <input type="email" name="email">
-        </label>
-        <label>
-            viesti:
-            <textarea name="message"></textarea>
-        </label>
-       
-        <button type="submit">Send</button>
-        </form>     
+          
+        <form action="https://formspree.io/f/xblaegnq" method="POST">
+            <label>Nimi</label>
+            <input type="text" name="nimi" class="form-control">
+          
+            <label>Sähköposti</label>
+            <input type="email" name="sahkoposti" class="form-control">
+          
+            <label>Viesti</label>
+            <textarea name="viesti" class="form-control"></textarea>
+          
+            <button type="submit" class="btn btn-primary">Lähetä</button>
+          </form>
+          
             <a href="mailto:etunimi.sukunimi@example.com">Lähetä sähköpostia</a>
 
           </form>
