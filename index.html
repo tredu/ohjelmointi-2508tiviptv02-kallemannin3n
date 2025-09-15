@@ -142,21 +142,21 @@
       <div class="row">
         <div class="col-md-7">
           <p>Voit ottaa yhteyttä sähköpostilla. Alla oleva lomake lähettää viestin suoraan sähköpostiini.</p>
-          <form>
-            <div class="mb-3">
-              <label class="form-label">Nimi</label>
-              <input type="text" class="form-control" placeholder="Etunimi Sukunimi">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Sähköposti</label>
-              <input type="email" class="form-control" placeholder="sahkoposti@example.com">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Viesti</label>
-              <textarea class="form-control" rows="4" placeholder="Hei! Olen kiinnostunut..."></textarea>
-            </div>
+          <form action="https://formspree.io/f/myniceform" method="POST">
+            <label>Nimi</label>
+            <input type="text" name="nimi" class="form-control">
+          
+            <label>Sähköposti</label>
+            <input type="email" name="sahkoposti" class="form-control">
+          
+            <label>Viesti</label>
+            <textarea name="viesti" class="form-control"></textarea>
+          
             <button type="submit" class="btn btn-primary">Lähetä</button>
-            <a class="btn btn-link" href="mailto:etunimi.sukunimi@example.com">Tai lähetä sähköpostia</a>
+          </form>
+          
+            <a href="mailto:etunimi.sukunimi@example.com">Lähetä sähköpostia</a>
+
           </form>
         </div>
         <div class="col-md-5">
