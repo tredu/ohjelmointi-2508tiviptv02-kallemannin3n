@@ -144,20 +144,39 @@
           <p>Voit ottaa yhteyttä sähköpostilla. Alla oleva lomake lähettää viestin suoraan sähköpostiini.</p>
           
         <form action="https://formspree.io/f/xblaegnq" method="POST">
-            <label>Nimi</label>
-            <input type="text" name="nimi" class="form-control">
-          
-            <label>Sähköposti</label>
-            <input type="email" name="sahkoposti" class="form-control">
-          
-            <label>Viesti</label>
-            <textarea name="viesti" class="form-control"></textarea>
-          
-            <button type="submit" class="btn btn-primary">Lähetä</button>
-          </form>
-          
-            <a href="mailto:etunimi.sukunimi@example.com">Lähetä sähköpostia</a>
-
+            <section id="contact" class="py-5 bg-light">
+                <div class="container">
+                  <h2 class="h3 mb-4 text-center">Ota yhteyttä</h2>
+                  <div class="row justify-content-center">
+                    <div class="col-md-8 col-lg-6">
+                      <div class="card shadow-lg border-0 rounded-4">
+                        <div class="card-body p-4">
+                          <form action="https://formspree.io/f/myniceform" method="POST">
+                            <div class="mb-3">
+                              <label class="form-label">Nimi</label>
+                              <input type="text" name="nimi" class="form-control rounded-pill">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Sähköposti</label>
+                              <input type="email" name="sahkoposti" class="form-control rounded-pill">
+                            </div>
+                            <div class="mb-3">
+                              <label class="form-label">Viesti</label>
+                              <textarea name="viesti" rows="4" class="form-control rounded-3"></textarea>
+                            </div>
+                            <div class="d-grid">
+                              <button type="submit" class="btn btn-primary btn-lg rounded-pill">
+                                ✉ Lähetä viesti
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
           </form>
         </div>
         <div class="col-md-5">
