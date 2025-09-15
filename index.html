@@ -28,7 +28,7 @@
           <li class="nav-item"><a class="nav-link" href="#about">Tietoja</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projektit</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Yhteystiedot</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://github.com/" target="_blank">GitHub</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/kallemannin3n" target="_blank">GitHub</a></li>
         </ul>
       </div>
     </div>
@@ -161,7 +161,10 @@
         </div>
         <div class="col-md-5">
           <h5>Lisätietoja</h5>
-          <p>Voit myös lisätä CV:n latauslinkin, työtodistuksia tai suosittelijoiden yhteystiedot tähän.</p>
+          <a href="CV.docx" download class="btn btn-success btn-sm">
+            Lataa CV
+          </a>
+          
         </div>
       </div>
     </div>
@@ -169,17 +172,16 @@
 
   <footer class="bg-dark text-white">
     <div class="container d-flex justify-content-between align-items-center">
-      <small>© 2025 Etunimi Sukunimi</small>
+      <small>© 2025 Kalle Manninen</small>
       <div>
-        <a href="https://treduan.github.io/portfolio/" target="_blank" class="text-white me-3">Opettajan rautalankamalli</a>
-        <a href="#" class="text-white">Käytetyt lähteet</a>
+
       </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Pieni smooth scroll nav-link toiminnallisuus
+
     document.querySelectorAll('a[href^="#"]').forEach(a=>{
       a.addEventListener('click', function(e){
         const target = document.querySelector(this.getAttribute('href'));
